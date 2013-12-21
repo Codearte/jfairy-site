@@ -76,12 +76,6 @@
 
         <div class="highlight highlight-xml"><pre><span class="nt">&lt;pom&gt;</span>
     ...
-    <span class="nt">&lt;repositories&gt;</span>
-        <span class="nt">&lt;repository&gt;</span>
-            <span class="nt">&lt;url&gt;</span>https://oss.sonatype.org/content/repositories/public<span class="nt">&lt;/url&gt;</span>
-        <span class="nt">&lt;/repository&gt;</span>
-    <span class="nt">&lt;/repositories&gt;</span>
-    ...
     <span class="nt">&lt;dependencies&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
             <span class="nt">&lt;groupId&gt;</span>org.jfairy<span class="nt">&lt;/groupId&gt;</span>
@@ -97,9 +91,6 @@
 
         <div class="highlight highlight-groovy"><pre><span class="n">repositories</span> <span class="o">{</span>
     <span class="n">mavenCentral</span><span class="o">()</span>
-    <span class="n">maven</span> <span class="o">{</span>
-        <span class="n">url</span> <span class="s1">'https://oss.sonatype.org/content/repositories/public'</span>
-    <span class="o">}</span>
 <span class="o">}</span>
 ...
 testCompile 'org.jfairy:jfairy:0.2.0'

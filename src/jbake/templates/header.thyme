@@ -1,0 +1,27 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-transitional-thymeleaf-4.dtd">
+<html lang="en">
+	<head th:fragment="head">
+	    <meta charset="utf-8"/>
+	    <title th:with="title=(${content.title != null} ? ${content.title} : 'jFairy by Codearte')" th:text="${title}"></title>
+        <meta name="viewport" content="width=740" />
+	    <meta name="description" content=""/>
+	    <meta name="author" content=""/>
+	    <meta name="keywords" content=""/>
+	    <meta name="generator" content="JBake"/>
+	
+        <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+
+        <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+        <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+        <script type="text/javascript" src="javascripts/modernizr.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+        <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+	</head>
+</html>

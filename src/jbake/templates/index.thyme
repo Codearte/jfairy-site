@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header.thyme::head"/>
+<body onload="prettyPrint()">
+<a id="forkme_banner" href="https://github.com/Codearte/jfairy">View on GitHub</a>
+
+<div class="shell">
+
+    <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>jFairy</h1>
+            <h2>Java fake data generator</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+    </header>
+
+    <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/Codearte/jfairy/zipball/master" class="zip"><em>download</em> .ZIP</a><a
+                href="https://github.com/Codearte/jfairy/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+    </section>
+
+
+    <span class="banner-fix"></span>
+
+
+    <section id="main_content" th:each="post : ${published_posts}" >
+        <p th:utext='${post.body}' th:remove="tag">body</p>
+    </section>
+
+    <div th:replace="footer.thyme::footer"></div>
+
+</div>
+
+</body>
+</html>
+
+

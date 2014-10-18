@@ -1,64 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=740" />
+title=Main
+date=2013-08-25
+type=post
+tags=post
+status=published
+~~~~~~
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>jFairy by Codearte</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/Codearte/jfairy">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>jFairy</h1>
-            <h2>Java fake data generator</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/Codearte/jfairy/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Codearte/jfairy/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h1>
-<a name="fairyland-" class="anchor" href="#fairyland-"><span class="octicon octicon-link"></span></a>jFairy <a href="https://travis-ci.org/Codearte/fairyland"><img src="https://travis-ci.org/Codearte/jfairy.png" alt="Build Status"></a>
+<h1>
+    <a name="fairyland-" class="anchor" href="#fairyland-"><span class="octicon octicon-link"></span></a>jFairy <a href="https://travis-ci.org/Codearte/fairyland"><img src="https://travis-ci.org/Codearte/jfairy.png" alt="Build Status"></a>
 </h1>
 
 <p style="text-align: center"><script type="text/javascript" src="http://www.ohloh.net/p/711058/widgets/project_thin_badge.js"></script></p>
 <p>Java fake data generator. Based on Wikipedia: <blockquote cite="http://en.wikipedia.org/wiki/Fairyland">Fairyland, in folklore, is the fabulous land or abode of fairies or fays.</blockquote></p>
 
 <h2>
-<a name="embedding" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Adding into project</h2>
+    <a name="embedding" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Adding into project</h2>
 
 <p>In Maven projects (pom.xml):</p>
 
-        <div class="highlight highlight-xml"><pre><span class="nt">&lt;pom&gt;</span>
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;pom&gt;</span>
     ...
     <span class="nt">&lt;dependencies&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
@@ -73,7 +32,7 @@
 
 <p>In Gradle projects (build.gradle):</p>
 
-        <div class="highlight highlight-groovy"><pre><span class="n">repositories</span> <span class="o">{</span>
+<div class="highlight highlight-groovy"><pre><span class="n">repositories</span> <span class="o">{</span>
     <span class="n">mavenCentral</span><span class="o">()</span>
 <span class="o">}</span>
 ...
@@ -82,7 +41,7 @@ testCompile 'org.jfairy:jfairy:0.2.2'
 
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+    <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 <p>Creating simple objects:</p>
 
 <div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">fairy</span> <span class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
@@ -116,12 +75,12 @@ testCompile 'org.jfairy:jfairy:0.2.2'
 </pre></div>
 
 <h2>
-<a name="sample" class="anchor" href="#sample"><span class="octicon octicon-link"></span></a>Other samples</h2>
+    <a name="sample" class="anchor" href="#sample"><span class="octicon octicon-link"></span></a>Other samples</h2>
 
 <p>Look into <a href="https://github.com/Codearte/fairyland/tree/master/src/test/groovy/snippets/">code samples</a></p>
 
 <h2>
-<a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
+    <a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
 
 <p>This project can be built using <a href="http://www.gradle.org/">gradle</a> command:</p>
 
@@ -129,29 +88,11 @@ testCompile 'org.jfairy:jfairy:0.2.2'
 </code></pre>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+    <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>Installation into <a href="http://maven.apache.org/">maven</a> local repository</p>
 
 <pre><code>./gradlew publishToMavenLocal
 </code></pre>
 
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/Codearte">Codearte</a> can be found on <a href="https://github.com/Codearte/fairyland">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
-</html>
+</section>

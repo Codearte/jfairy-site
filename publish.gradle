@@ -1,0 +1,12 @@
+plugins {
+    id "org.ajoberstar.github-pages" version "0.11.1"
+}
+
+githubPages {
+    repoUri = 'git@github.com:mariuszs/jfairy-site.git'
+    pages {
+        from(file('build/jbake')) {
+            into '.'
+        }
+    }
+}

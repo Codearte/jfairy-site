@@ -5,8 +5,8 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>So, 18 paź 2014 22:58:43 +0200</pubDate>
-    <lastBuildDate>So, 18 paź 2014 22:58:43 +0200</lastBuildDate>
+    <pubDate>N, 19 paź 2014 11:33:06 +0200</pubDate>
+    <lastBuildDate>N, 19 paź 2014 11:33:06 +0200</lastBuildDate>
 
     <item>
       <title>Main</title>
@@ -15,14 +15,19 @@
       <guid isPermaLink="false">main.html</guid>
       <description>
 &amp;lt;h1&amp;gt;
-    &amp;lt;a name=&amp;quot;fairyland-&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#fairyland-&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;jFairy &amp;lt;a href=&amp;quot;https://travis-ci.org/Codearte/fairyland&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://travis-ci.org/Codearte/jfairy.png&amp;quot; alt=&amp;quot;Build Status&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+    &amp;lt;a name=&amp;quot;fairyland-&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#fairyland-&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;jFairy &amp;lt;a
+        href=&amp;quot;https://travis-ci.org/Codearte/fairyland&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://travis-ci.org/Codearte/jfairy.png&amp;quot;
+                                                             alt=&amp;quot;Build Status&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
 &amp;lt;/h1&amp;gt;
 
-&amp;lt;p style=&amp;quot;text-align: center&amp;quot;&amp;gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://www.ohloh.net/p/711058/widgets/project_thin_badge.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;Java fake data generator. Based on Wikipedia: &amp;lt;blockquote cite=&amp;quot;http://en.wikipedia.org/wiki/Fairyland&amp;quot;&amp;gt;Fairyland, in folklore, is the fabulous land or abode of fairies or fays.&amp;lt;/blockquote&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Java fake data generator. Based on Wikipedia:
+&amp;lt;blockquote cite=&amp;quot;http://en.wikipedia.org/wiki/Fairyland&amp;quot;&amp;gt;Fairyland, in folklore, is the fabulous land or abode of
+    fairies or fays.
+&amp;lt;/blockquote&amp;gt;&amp;lt;/p&amp;gt;
 
 &amp;lt;h2&amp;gt;
-    &amp;lt;a name=&amp;quot;embedding&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#usage&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;Adding into project&amp;lt;/h2&amp;gt;
+    &amp;lt;a name=&amp;quot;embedding&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#usage&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;Adding into project
+&amp;lt;/h2&amp;gt;
 
 &amp;lt;p&amp;gt;In Maven projects (pom.xml):&amp;lt;/p&amp;gt;
 
@@ -37,7 +42,8 @@
     &amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;/dependencies&amp;amp;gt;&amp;lt;/span&amp;gt;
     ...
 &amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;/pom&amp;amp;gt;&amp;lt;/span&amp;gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
 
 &amp;lt;p&amp;gt;In Gradle projects (build.gradle):&amp;lt;/p&amp;gt;
 
@@ -46,42 +52,80 @@
 &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;}&amp;lt;/span&amp;gt;
 ...
 testCompile &amp;#39;org.jfairy:jfairy:0.2.5&amp;#39;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
 
 
 &amp;lt;h2&amp;gt;
     &amp;lt;a name=&amp;quot;usage&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#usage&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;Usage&amp;lt;/h2&amp;gt;
 &amp;lt;p&amp;gt;Creating simple objects:&amp;lt;/p&amp;gt;
 
-&amp;lt;div class=&amp;quot;highlight highlight-java&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
+&amp;lt;div class=&amp;quot;highlight highlight-java&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt; &amp;lt;span
+        class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span
+        class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
 
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;fullName&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;            &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Chloe Barker&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;email&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;               &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// barker@yahoo.com&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;telephoneNumber&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;     &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// 690-950-802&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;fullName&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;            &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Chloe Barker&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;email&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;               &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// barker@yahoo.com&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;telephoneNumber&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;     &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// 690-950-802&amp;lt;/span&amp;gt;
 
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;adultMale&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;male&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(),&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;minAge&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;mi&amp;quot;&amp;gt;21&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;));&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;adultMale&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;isMale&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;           &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// true&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;adultMale&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;dateOfBirth&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;      &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// at least 21 years earlier&amp;lt;/span&amp;gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;adultMale&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span
+            class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;n&amp;quot;&amp;gt;male&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(),&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;minAge&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;mi&amp;quot;&amp;gt;21&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;));&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;adultMale&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;isMale&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;           &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// true&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;adultMale&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;dateOfBirth&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;      &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// at least 21 years earlier&amp;lt;/span&amp;gt;
+&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
 
 &amp;lt;p&amp;gt;Creating related objects:&amp;lt;/p&amp;gt;
 
-&amp;lt;div class=&amp;quot;highlight highlight-java&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Company&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;          &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Robuten Associates&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;url&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;           &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// http://www.robuteniaassociates.com&amp;lt;/span&amp;gt;
+&amp;lt;div class=&amp;quot;highlight highlight-java&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt; &amp;lt;span
+        class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span
+        class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Company&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;name&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;          &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Robuten Associates&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;url&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;           &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// http://www.robuteniaassociates.com&amp;lt;/span&amp;gt;
 
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;salesman&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;withCompany&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;));&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;salesman&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;fullName&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;     &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Juan Camacho&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;salesman&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;companyEmail&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// juan.camacho@robuteniaassociates.com&amp;lt;/span&amp;gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Person&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;salesman&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;fairy&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;n&amp;quot;&amp;gt;withCompany&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;company&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;));&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;salesman&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;fullName&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt;     &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Juan Camacho&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;System&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;out&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;na&amp;quot;&amp;gt;println&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;salesman&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;companyEmail&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;());&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// juan.camacho@robuteniaassociates.com&amp;lt;/span&amp;gt;
+&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
 
 &amp;lt;p&amp;gt;Locale support:&amp;lt;/p&amp;gt;
 
-&amp;lt;div class=&amp;quot;highlight highlight-java&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;enFairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;                               &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Locale.ENGLISH&amp;lt;/span&amp;gt;
-&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;plFairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Locale&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;forLanguageTag&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;pl&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;));&amp;lt;/span&amp;gt;    &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Polish version&amp;lt;/span&amp;gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;highlight highlight-java&amp;quot;&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;enFairy&amp;lt;/span&amp;gt; &amp;lt;span
+        class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span
+        class=&amp;quot;o&amp;quot;&amp;gt;();&amp;lt;/span&amp;gt;                               &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Locale.ENGLISH&amp;lt;/span&amp;gt;
+&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;plFairy&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Fairy&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;create&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;n&amp;quot;&amp;gt;Locale&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;o&amp;quot;&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;forLanguageTag&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span
+            class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;pl&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;o&amp;quot;&amp;gt;));&amp;lt;/span&amp;gt;    &amp;lt;span class=&amp;quot;c1&amp;quot;&amp;gt;// Polish version&amp;lt;/span&amp;gt;
+&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
 
 &amp;lt;h2&amp;gt;
     &amp;lt;a name=&amp;quot;sample&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#sample&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;Other samples&amp;lt;/h2&amp;gt;
@@ -97,14 +141,17 @@ testCompile &amp;#39;org.jfairy:jfairy:0.2.5&amp;#39;
 &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
 
 &amp;lt;h2&amp;gt;
-    &amp;lt;a name=&amp;quot;installation&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#installation&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;Installation&amp;lt;/h2&amp;gt;
+    &amp;lt;a name=&amp;quot;installation&amp;quot; class=&amp;quot;anchor&amp;quot; href=&amp;quot;#installation&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;octicon octicon-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;Installation
+&amp;lt;/h2&amp;gt;
 
 &amp;lt;p&amp;gt;Installation into &amp;lt;a href=&amp;quot;http://maven.apache.org/&amp;quot;&amp;gt;maven&amp;lt;/a&amp;gt; local repository&amp;lt;/p&amp;gt;
 
 &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;./gradlew publishToMavenLocal
 &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
 
-&amp;lt;/section&amp;gt;
+&amp;lt;p style=&amp;quot;text-align: center&amp;quot;&amp;gt;
+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://www.ohloh.net/p/711058/widgets/project_thin_badge.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/p&amp;gt;
 </description>	  
     </item>
 

@@ -75,14 +75,19 @@
 		
 			<p>
 <h1>
-    <a name="fairyland-" class="anchor" href="#fairyland-"><span class="octicon octicon-link"></span></a>jFairy <a href="https://travis-ci.org/Codearte/fairyland"><img src="https://travis-ci.org/Codearte/jfairy.png" alt="Build Status"></a>
+    <a name="fairyland-" class="anchor" href="#fairyland-"><span class="octicon octicon-link"></span></a>jFairy <a
+        href="https://travis-ci.org/Codearte/fairyland"><img src="https://travis-ci.org/Codearte/jfairy.png"
+                                                             alt="Build Status"></a>
 </h1>
 
-<p style="text-align: center"><script type="text/javascript" src="http://www.ohloh.net/p/711058/widgets/project_thin_badge.js"></script></p>
-<p>Java fake data generator. Based on Wikipedia: <blockquote cite="http://en.wikipedia.org/wiki/Fairyland">Fairyland, in folklore, is the fabulous land or abode of fairies or fays.</blockquote></p>
+<p>Java fake data generator. Based on Wikipedia:
+<blockquote cite="http://en.wikipedia.org/wiki/Fairyland">Fairyland, in folklore, is the fabulous land or abode of
+    fairies or fays.
+</blockquote></p>
 
 <h2>
-    <a name="embedding" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Adding into project</h2>
+    <a name="embedding" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Adding into project
+</h2>
 
 <p>In Maven projects (pom.xml):</p>
 
@@ -97,7 +102,8 @@
     <span class="nt">&lt;/dependencies&gt;</span>
     ...
 <span class="nt">&lt;/pom&gt;</span>
-</pre></div>
+</pre>
+</div>
 
 <p>In Gradle projects (build.gradle):</p>
 
@@ -106,42 +112,80 @@
 <span class="o">}</span>
 ...
 testCompile 'org.jfairy:jfairy:0.2.5'
-</pre></div>
+</pre>
+</div>
 
 
 <h2>
     <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 <p>Creating simple objects:</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">fairy</span> <span class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
-<span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="n">fairy</span><span class="o">.</span><span class="na">person</span><span class="o">();</span>
+<div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">fairy</span> <span
+        class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span
+        class="o">();</span>
+<span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="n">fairy</span><span
+            class="o">.</span><span class="na">person</span><span class="o">();</span>
 
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">fullName</span><span class="o">());</span>            <span class="c1">// Chloe Barker</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">email</span><span class="o">());</span>               <span class="c1">// barker@yahoo.com</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">telephoneNumber</span><span class="o">());</span>     <span class="c1">// 690-950-802</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span
+            class="na">fullName</span><span class="o">());</span>            <span class="c1">// Chloe Barker</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span
+            class="na">email</span><span class="o">());</span>               <span class="c1">// barker@yahoo.com</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span
+            class="na">telephoneNumber</span><span class="o">());</span>     <span class="c1">// 690-950-802</span>
 
-<span class="n">Person</span> <span class="n">adultMale</span> <span class="o">=</span> <span class="n">fairy</span><span class="o">.</span><span class="na">person</span><span class="o">(</span><span class="n">male</span><span class="o">(),</span> <span class="n">minAge</span><span class="o">(</span><span class="mi">21</span><span class="o">));</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">adultMale</span><span class="o">.</span><span class="na">isMale</span><span class="o">());</span>           <span class="c1">// true</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">adultMale</span><span class="o">.</span><span class="na">dateOfBirth</span><span class="o">());</span>      <span class="c1">// at least 21 years earlier</span>
-</pre></div>
+<span class="n">Person</span> <span class="n">adultMale</span> <span class="o">=</span> <span
+            class="n">fairy</span><span class="o">.</span><span class="na">person</span><span class="o">(</span><span
+            class="n">male</span><span class="o">(),</span> <span class="n">minAge</span><span class="o">(</span><span
+            class="mi">21</span><span class="o">));</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">adultMale</span><span
+            class="o">.</span><span class="na">isMale</span><span class="o">());</span>           <span class="c1">// true</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">adultMale</span><span
+            class="o">.</span><span class="na">dateOfBirth</span><span class="o">());</span>      <span class="c1">// at least 21 years earlier</span>
+</pre>
+</div>
 
 <p>Creating related objects:</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">fairy</span> <span class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
-<span class="n">Company</span> <span class="n">company</span> <span class="o">=</span> <span class="n">fairy</span><span class="o">.</span><span class="na">company</span><span class="o">();</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">company</span><span class="o">.</span><span class="na">name</span><span class="o">());</span>          <span class="c1">// Robuten Associates</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">company</span><span class="o">.</span><span class="na">url</span><span class="o">());</span>           <span class="c1">// http://www.robuteniaassociates.com</span>
+<div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">fairy</span> <span
+        class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span
+        class="o">();</span>
+<span class="n">Company</span> <span class="n">company</span> <span class="o">=</span> <span class="n">fairy</span><span
+            class="o">.</span><span class="na">company</span><span class="o">();</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">company</span><span class="o">.</span><span
+            class="na">name</span><span class="o">());</span>          <span class="c1">// Robuten Associates</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">company</span><span class="o">.</span><span
+            class="na">url</span><span class="o">());</span>           <span class="c1">// http://www.robuteniaassociates.com</span>
 
-<span class="n">Person</span> <span class="n">salesman</span> <span class="o">=</span> <span class="n">fairy</span><span class="o">.</span><span class="na">person</span><span class="o">(</span><span class="n">withCompany</span><span class="o">(</span><span class="n">company</span><span class="o">));</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">salesman</span><span class="o">.</span><span class="na">fullName</span><span class="o">());</span>     <span class="c1">// Juan Camacho</span>
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">salesman</span><span class="o">.</span><span class="na">companyEmail</span><span class="o">());</span> <span class="c1">// juan.camacho@robuteniaassociates.com</span>
-</pre></div>
+<span class="n">Person</span> <span class="n">salesman</span> <span class="o">=</span> <span class="n">fairy</span><span
+            class="o">.</span><span class="na">person</span><span class="o">(</span><span
+            class="n">withCompany</span><span class="o">(</span><span class="n">company</span><span class="o">));</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">salesman</span><span
+            class="o">.</span><span class="na">fullName</span><span class="o">());</span>     <span class="c1">// Juan Camacho</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span
+            class="na">println</span><span class="o">(</span><span class="n">salesman</span><span
+            class="o">.</span><span class="na">companyEmail</span><span class="o">());</span> <span class="c1">// juan.camacho@robuteniaassociates.com</span>
+</pre>
+</div>
 
 <p>Locale support:</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">enFairy</span> <span class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>                               <span class="c1">// Locale.ENGLISH</span>
-<span class="n">Fairy</span> <span class="n">plFairy</span> <span class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">Locale</span><span class="o">.</span><span class="na">forLanguageTag</span><span class="o">(</span><span class="s">"pl"</span><span class="o">));</span>    <span class="c1">// Polish version</span>
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="n">Fairy</span> <span class="n">enFairy</span> <span
+        class="o">=</span> <span class="n">Fairy</span><span class="o">.</span><span class="na">create</span><span
+        class="o">();</span>                               <span class="c1">// Locale.ENGLISH</span>
+<span class="n">Fairy</span> <span class="n">plFairy</span> <span class="o">=</span> <span class="n">Fairy</span><span
+            class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">Locale</span><span
+            class="o">.</span><span class="na">forLanguageTag</span><span class="o">(</span><span
+            class="s">"pl"</span><span class="o">));</span>    <span class="c1">// Polish version</span>
+</pre>
+</div>
 
 <h2>
     <a name="sample" class="anchor" href="#sample"><span class="octicon octicon-link"></span></a>Other samples</h2>
@@ -157,14 +201,17 @@ testCompile 'org.jfairy:jfairy:0.2.5'
 </code></pre>
 
 <h2>
-    <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+    <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation
+</h2>
 
 <p>Installation into <a href="http://maven.apache.org/">maven</a> local repository</p>
 
 <pre><code>./gradlew publishToMavenLocal
 </code></pre>
 
-</section>
+<p style="text-align: center">
+    <script type="text/javascript" src="http://www.ohloh.net/p/711058/widgets/project_thin_badge.js"></script>
+</p>
 </p>
 		
 			<hr />
@@ -181,9 +228,18 @@ testCompile 'org.jfairy:jfairy:0.2.5'
           <span class="right-tail"></span>
         </span>
 
-        <p>Generated with <a href="http://jbake.org" shape="rect">jBake.org</a> using Merlot</p>
+        <p>Generated with <a href="http://jbake.org" shape="rect">jBake.org</a> using Me2rlot</p>
         <span class="octocat"></span>
     </footer>
+<script type="text/javascript" xml:space="preserve">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55892824-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
     </body>
 </html>
